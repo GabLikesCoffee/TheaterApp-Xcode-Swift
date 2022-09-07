@@ -20,7 +20,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [x] (1pt) Run your app on a real device.
 
 ### App Walkthrough GIF
-<img src="https://recordit.co/0Uug6YCKF5" width=250><br>
+<img src="http://g.recordit.co/0Uug6YCKF5.gif" width=250><br>
 
 ### Notes
 No challenges except for when my table view rows stopped showing up and resetting my computer seemed to help. Also alamofireimage gave me an error as well until I reset xcode.
