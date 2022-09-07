@@ -7,12 +7,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     var movies = [[String:Any]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        
         // Do any additional setup after loading the view.
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
@@ -29,13 +35,31 @@ class ViewController: UIViewController {
                     // TODO: Reload your table view data
                  
                     self.movies = dataDictionary["results"] as! [[String:Any]]
+                    self.tableView.reloadData()
                     print(dataDictionary)
 
              }
         }
         task.resume()
     }
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return movies.count
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
+        
+        let movie = movies[indexPath.row]
+        let title = movie["title"]
+        let synopsis = movie["overview"] as! String
+        
+        cell.titleLabel.text = title as? String
+        cell.synLabel.text = synopsis
+        return cell
+    }
+    
 
 }
 
