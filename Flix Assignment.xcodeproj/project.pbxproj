@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030184D628D00B74005DD10E /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030184D528D00B74005DD10E /* MovieGridCell.swift */; };
 		031083AD28C634E0003448C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031083AC28C634E0003448C8 /* AppDelegate.swift */; };
 		031083AF28C634E0003448C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031083AE28C634E0003448C8 /* SceneDelegate.swift */; };
 		031083B128C634E0003448C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031083B028C634E0003448C8 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		030184D528D00B74005DD10E /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
 		031083A928C634E0003448C8 /* Flix Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flix Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		031083AC28C634E0003448C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		031083AE28C634E0003448C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				031083B028C634E0003448C8 /* ViewController.swift */,
 				031083AE28C634E0003448C8 /* SceneDelegate.swift */,
 				031083B228C634E0003448C8 /* Main.storyboard */,
+				030184D528D00B74005DD10E /* MovieGridCell.swift */,
 				032B627428CA702B001E9BEE /* MovieDetailsViewController.swift */,
 				031083B528C634E6003448C8 /* Assets.xcassets */,
 				031083B728C634E6003448C8 /* LaunchScreen.storyboard */,
@@ -224,6 +227,7 @@
 				03ABC9D928C8DE6B005D6D31 /* MovieCell.swift in Sources */,
 				031083AF28C634E0003448C8 /* SceneDelegate.swift in Sources */,
 				039B07F928CF958900A713F6 /* MovieGridViewController.swift in Sources */,
+				030184D628D00B74005DD10E /* MovieGridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
